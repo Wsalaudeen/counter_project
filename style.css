@@ -1,0 +1,92 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* utility styling */
+html,
+body {
+  height: 100%;
+}
+body {
+  background: salmon;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.count-body {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.count-body h1 {
+  margin-bottom: 5px;
+}
+
+/* button styling */
+.count-btn button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 0;
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button#decrement {
+  background-color: red;
+  color: black;
+}
+
+button#decrement:hover {
+  background-color: red;
+  color: white;
+}
+button#reset {
+  background-color: moccasin;
+  color: black;
+}
+
+button#reset:hover {
+  background-color: moccasin;
+  color: white;
+}
+button#increment {
+  background-color: green;
+  color: black;
+}
+
+button#increment:hover {
+  background-color: green;
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background: white;
+  }
+
+  .count-body h1 {
+    margin-bottom: 2px;
+  }
+  .count-btn {
+    display: flex;
+    flex-direction: column; 
+  }
+  .count-btn button {
+    padding: 10px 20px;
+    margin: 2px 0;
+    border: 0;
+    color: black;
+    font-weight: 900;
+    font-size: 16px;
+  }
+}
+
